@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    char str[100];
+    int i;
+    int lower=0,special=0;;
+    printf("Please enter the string \n");
+    gets(str);
+    if(str[i]>='a' && str[i]<='z') { 
+               lower++;
+    }
+    else
+    {
+        special++;
+    }
+    printf("\nLower case letters: %d",lower);
+    printf("\nSpecial characters: %d",special);
+    return 0;
+}
